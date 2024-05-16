@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <link href="./assets/vendor/font-awesome/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/vendor/font-awesome/brands.css" rel="stylesheet" />
+    <link href="./assets/vendor/font-awesome/solid.css" rel="stylesheet" />
+    <!-- bootstrap 5.3 -->
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.css">
+    <!-- Conexión para los iconos ONLINE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Mi Portafolio</title>
+</head>
+<body>
+    <!-- Tendrá el NavBar -->
+    <header>
+        <div class="container-fluid cont1 py-0 px-0">
+            <section class="col-xl-12 col-sm-12 col-xs-12">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+                    <div class="container-fluid barra1 px-4 py-2">
+                        <img class="logo" src="./assets/img/logo.png" alt="">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse py-2 px-2" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                          <a class="nav-link"  href="#Sobre_mi">Sobre mí</a>
+                          <a class="nav-link" href="#Repositorio">Proyectos</a>
+                          <a class="nav-link" href="#Habilidad">Habilidades</a>
+                          <a class="nav-link" href="#Contacto">Contactame</a>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>                 
+            </section>
+        </div>
+    </header>
+
+    <!-- Tendrá el contenido de la página -->
+    <main>
+        <div class="container-fluid cont2">
+            <!-- Aquí irá mi nombre y perfil -->
+            <div class="row r1">
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <h1 class="Titulo">Kevin Vivanco</h1>
+                    <p class="Info">Desarrollador web en PrOcEsO</p>    
+                </section>
+            </div> 
+
+            <div class="row r2" id="Sobre_mi">
+                <section class="col-xl-4 col-sm-4 col-xs-12 py-3">
+                    <!-- Aquí importaré mi foto de GitHub -->
+                    <div id="avatar-container">
+                        <img id="avatar" src="" alt="Avatar">
+                    </div>
+                </section>
+                <section class="col-xl-8 col-sm-8 col-xs-12 py-3">
+                    <!-- Pequeña descripción de mí -->
+                    <div class="card foto">
+                        <div class="card-body">
+                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam est quae illum modi, eum ducimus inventore dolorum, velit quo nihil molestias, laudantium asperiores quas iure totam similique voluptas quidem? Consectetur?</span>                
+                        </div>
+                    </div>
+                </section>
+            </div> 
+
+            <div class="row r3" id="Repositorio">
+                <!-- Aquí irán 3 de mis nejores repositorios -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <h1 class="Titulo">Algunos proyectos...</h1> 
+                </section>
+            </div> 
+
+            <div class="row r4" id="Habilidad">
+                <!-- Aquí irán mis Habilidades -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <h1 class="Titulo">Habilidades Tecnológicas</h1> 
+                </section>
+            </div>
+
+            <div class="row r5">
+                <!-- Aquí irán mis "Certificados" -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <h1 class="Titulo">Certificados</h1> 
+                </section>
+            </div> 
+
+            <div class="row r6" id="Contacto">
+                <!-- Contactame -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <h1 class="Titulo Form_Tit">Contactame</h1> 
+                    <div class="card Formulario">
+                        <div class="card-body">
+                            <form id="myForm">
+                                <!-- Nombre completo -->
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label pb-2">Ingrese su nombre</label>
+                                    <input type="Text" class="form-control" id="nombre" placeholder="Nombre completo si es posible">
+                                    <!-- Mensaje de error si el campo está vacío -->
+                                    <div id="nombreERROR" class="text-danger"></div>
+                                </div>
+                                <!-- Correo -->
+                                <div class="mb-3 pb-3">
+                                    <label for="exampleInputEmail1" class="form-label pb-2">Correo</label>
+                                    <input type="Text" class="form-control" id="Email" aria-describedby="emailHelp">
+                                    <div id="correoERROR" class="text-danger"></div>
+                                </div>
+                                <!-- Mensaje -->
+                                <div class="mb-3 pb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label pb-2">Nota</label>
+                                    <textarea class="form-control" id="Recado" rows="3" placeholder="(Opcional)"></textarea>
+                                </div>
+                                <button type="submit" value="Enviar" class="btn btn-success">Enviar</button>
+                            </form>        
+                        </div>
+                    </div>
+                </section>
+            </div> 
+        </div>
+    </main>
+
+    <!-- Tendrá el pié de página -->
+    <footer>
+
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="./assets/vendor/bootstrap/bootstrap.js"></script>
+<!-- JQuery -->
+<script src="./assets/vendor/jquery/jquery-3.7.1.min.js"></script>
+<!-- Scripts personalizados -->
+<script src="./assets/js/scripts.js"></script>
+</body>
+</html>

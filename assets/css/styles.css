@@ -1,0 +1,67 @@
+/*Importamos el archivo de las fuentes CSS para poder utilizarlas en nuestro proyecto solo con la propiedad font-family: ...*/
+
+@import url('fonts.css');
+
+:root{
+    --color: #FFA559;
+    --color1: #000000;
+    --color2 : #FFFFFF;
+
+    /* Color para las letras */
+    --colorA : #FFFFFF;
+    --colorB: #000000;
+
+}
+
+body{
+    background-color: var(--color);
+}
+
+/* Aquí estará el CSS de la barra superior */
+.nav-link{
+    text-decoration: none;
+    color: var(--colorB);
+}
+
+.logo{
+    height: 60px;
+    width: 60px;
+}
+
+.barra1{
+    background-color: var(--color2);
+}
+
+/* Aquí irá todo el contenido de la página (main) */
+.r1{
+    background-color: var(--color1);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.Titulo{
+    display: flex;
+    justify-content: center;
+    color: var(--colorA);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.Info{
+    
+    display: flex;
+    justify-content: center;
+    color: var(--colorA);
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+.r2{
+    background-color: var(--color2);
+}
+
+/* Parte del formulario */
+.Form_Tit{
+    padding-bottom: 3%;
+}
+.card{
+    background-color: var(--color3);
+}
