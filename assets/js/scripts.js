@@ -11,10 +11,8 @@ function obtenerDatosUsuario(username) {
         .then(userData => {
             console.log(userData);
 
-            // Actualizar el contenido de HTML con los datos del usuario.
-            document.getElementById('nombre').textContent = userData.name || 'Nombre no disponible';
+            //Biografía
             document.getElementById('bio').textContent = userData.bio || 'Biografía no disponible';
-            document.getElementById('seg').textContent = userData.followers;
             document.getElementById('repository').textContent = userData.public_repos;
 
             // Obtener la foto de perfil (avatar)
@@ -65,7 +63,7 @@ function validarFormulario(){
 
     //Validamos el Email
     const inputValue2 = Email.value.trim();
-    const allowedChars2 = /[a-zA-Z@ . 0-9\ _ ]/;
+    const allowedChars2 = /[@]/;
         //sanitizedValu2 (Variable) obtendrá el valor depurado, es decir, que una vez ingrese en el ciclo ELIMINARA cualquier caracter que no sea válido.
     let sanitizedValu2 = '';
     for (let i = 0; i < inputValue2.length; i++) {

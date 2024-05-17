@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
-    <link href="./assets/vendor/font-awesome/fontawesome.css" rel="stylesheet" />
-    <link href="./assets/vendor/font-awesome/brands.css" rel="stylesheet" />
-    <link href="./assets/vendor/font-awesome/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
     <!-- bootstrap 5.3 -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.css">
     <!-- Conexión para los iconos ONLINE -->
@@ -50,52 +48,101 @@
             <div class="row r1">
                 <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
                     <h1 class="Titulo">Kevin Vivanco</h1>
-                    <p class="Info">Desarrollador web en PrOcEsO</p>    
+                    <p class="Info "><strong><span id="bio" class="text-secundary"></span></strong></p> 
                 </section>
             </div> 
 
             <div class="row r2" id="Sobre_mi">
-                <section class="col-xl-4 col-sm-4 col-xs-12 py-3">
+                <section class="col-xl-3 col-sm-3 col-xs-12 pt-5">
                     <!-- Aquí importaré mi foto de GitHub -->
-                    <div id="avatar-container">
-                        <img id="avatar" src="" alt="Avatar">
+                    <div id="avatar-container" class="CajaFoto">
+                        <img class="FotoGit" id="avatar" src="" alt="Avatar">
                     </div>
                 </section>
-                <section class="col-xl-8 col-sm-8 col-xs-12 py-3">
+                <section class="col-xl-9 col-sm-9 col-xs-12 pt-5">
                     <!-- Pequeña descripción de mí -->
                     <div class="card foto">
                         <div class="card-body">
-                            <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam est quae illum modi, eum ducimus inventore dolorum, velit quo nihil molestias, laudantium asperiores quas iure totam similique voluptas quidem? Consectetur?</span>                
+                            <span>¡Hola! Soy un pobre y triste estudiante que está puliendo sus habilidades como desarrollador front-end, Pero ¿sabes qué es eso, no? 'Desarrollador front-end'. A ver, te explico
+                            </span>
+                            <br>
+                            <br>
+                            <span> Un desarollador front-end es el encargado de todo lo que puedes ver en un sitio web. Desde el diseño, los estilos e incluso animaciones del mismo. Básicamente hace que este luzca bien y sea agradable a la vista de los usuarios (o en teoría debería ser así). ¿Suena bien, no? Pero a veces te carcome la paciencia.
+                            </span>
+                            <br>
+                            <br>
+                            <span>
+                                ¿Algo más sobre mí? Me gusta pasar el tiempo recorriendo lugares y también tomar fotografías por si no funciona lo de 'Desarrollador front-end', ya tendría otra alternativa de ingresos.
+                            </span>               
                         </div>
                     </div>
                 </section>
             </div> 
 
             <div class="row r3" id="Repositorio">
-                <!-- Aquí irán 3 de mis nejores repositorios -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo">Algunos proyectos...</h1> 
+                <!-- Aquí irán el título de la sección -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 pt-5">
+                    <h1 class="Titulo2">Algunos proyectos...</h1>
+                    <p><p class="Info2">Repositorios 🠺<span id="repository" class="Info2"></span>🠸</p></p>
+                </section>
+                <!-- Parte de los repositorios -->
+                <section class="container container1">
+                    <div class="card card1">
+                        <figure>
+                            <a href="https://kevinparker02.github.io/WebGroundZero/index.html"><img class="imgRepos" src="./assets/img/Repos1.jpg"></a>
+                        </figure>
+                        <div class="contenido">
+                            <h3>GroundZero</h3>
+                            <p>Página web enfocada a la venta y masificación del grupo artístico denominado GroundZero.</p>
+                            <a class="Var1">HMTL</a>
+                            <a class="Var2">CSS</a>
+                            <a class="Var3">JS</a>
+                        </div>
+                    </div>
+                    <div class="card card1">
+                        <figure>
+                            <a href="https://kevinparker02.github.io/WebGroundZero/index.html"><img class="imgRepos" src="./assets/img/Repos1.jpg"></a>
+                        </figure>
+                        <div class="contenido">
+                            <h3>Ayuda Peludo</h3>
+                            <p>Página web dedicada a una ONG de animales domésticos que se dedican a encontrarles un hogar</p>
+                            <a class="Var1">HMTL</a>
+                            <a class="Var2">CSS</a>
+                        </div>
+                    </div>
+                    <div class="card card1">
+                        <figure>
+                            <a href="https://kevinparker02.github.io/WebGroundZero/index.html"><img class="imgRepos" src="./assets/img/Repos1.jpg"></a>
+                        </figure>
+                        <div class="contenido">
+                            <h3>InsPhoto</h3>
+                            <p>"El especial de la casa" Es una página web personal basada en una gaería de fotografías tomadas por mí</p>
+                            <a class="Var1">HMTL</a>
+                            <a class="Var2">CSS</a>
+                            <a class="Var3">JS</a>
+                        </div>
+                    </div>
                 </section>
             </div> 
 
             <div class="row r4" id="Habilidad">
                 <!-- Aquí irán mis Habilidades -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo">Habilidades Tecnológicas</h1> 
+                <section class="col-xl-12 col-sm-12 col-xs-12 pt-4">
+                    <h1 class="Titulo2">Habilidades Tecnológicas</h1> 
                 </section>
             </div>
 
-            <div class="row r5">
+            <div class="row r5" id="Certificados">
                 <!-- Aquí irán mis "Certificados" -->
                 <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo">Certificados</h1> 
+                    <h1 class="Titulo2">Certificados</h1> 
                 </section>
             </div> 
 
             <div class="row r6" id="Contacto">
                 <!-- Contactame -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo Form_Tit">Contactame</h1> 
+                <section class="col-xl-12 col-sm-12 col-xs-12">
+                    <h1 class="Titulo Titulo2">Contactame</h1> 
                     <div class="card Formulario">
                         <div class="card-body">
                             <form id="myForm">
