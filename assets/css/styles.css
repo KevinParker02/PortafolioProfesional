@@ -89,6 +89,7 @@ body{
     justify-content: center;
     color: var(--colorB);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding-bottom: 30px;
 }
 
 .Info2{
@@ -192,7 +193,6 @@ body{
     box-shadow: 2px 2px 8px rgba(0,0,0.4);
     transform: translateY(-2%);
 }
-
 
 
 /* RESPONSIVE ZONE :D */
