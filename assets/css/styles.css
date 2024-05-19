@@ -8,6 +8,7 @@
     --color2 : #FFFFFF;
     --color3 : #2D53E5;
     --color4: #F7E025;
+    --color5: #7D12F8;
 
     /* Color para las letras */
     --colorA : #FFFFFF;
@@ -16,7 +17,7 @@
 
 }
 
-/* Control de las cajas */
+/* --------------------------------- Control de las cajas */
 *{
     box-sizing: border-box;
 }
@@ -26,7 +27,7 @@ body{
     font-family: 'Nunito', sans-serif !important;
 }
 
-/* Aquí estará el CSS de la barra superior */
+/* ---------------------------------- Aquí estará el CSS de la barra superior */
 .nav-link{
     text-decoration: none;
     color: var(--colorB);
@@ -41,7 +42,7 @@ body{
     background-color: var(--color2);
 }
 
-/* Aquí irá todo el contenido de la página (main) */
+/* ---------------------------------- Aquí irá todo el contenido de la página (main) */
 .r1{
     background-color: var(--color1);
     padding-top: 5%;
@@ -54,7 +55,8 @@ body{
     color: var(--colorA);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
-   /* Sección donde irá mi información */
+
+/* ---------------------------------- Sección donde irá mi información */
 .CajaFoto{
     display: flex;
     justify-content: center;
@@ -72,14 +74,17 @@ body{
     display: flex;
     justify-content: center;
     color: var(--colorA);
+    font-family: 'Roboto Mono', sans-serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .r2{
     background-color: var(--color2);
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14.5px;
 }
 
-/* Parte de mis repositorios */
+/* ---------------------------------- Parte de mis repositorios */
 .cont2{
     background-color: var(--color2);
 }
@@ -116,7 +121,14 @@ body{
     cursor: default;
     transition: all 400ms ease;
 }
-/* Efectos de las cajas */
+
+p{
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 13px;
+    justify-content: center;
+}
+
+       /* Efectos de las cajas */
 .card1:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0.4);
     transform: translateY(-3%);
@@ -137,7 +149,7 @@ body{
     color: var(--colorC);
 }
 
-/* Aquí van los "iconos" de los lenguajes */
+       /* Aquí van los "iconos" de los lenguajes */
 .card1 .Var1{
     /* HTML */
     text-decoration: none;
@@ -194,16 +206,177 @@ body{
     transform: translateY(-2%);
 }
 
+/* ---------------------------------- Parte de las habilidades */
+.container2 {
+    place-items: center;
+    padding-bottom: 45px;
+}
 
-/* RESPONSIVE ZONE :D */
+.contenedor_tarjetas {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 56px;
+}
+
+.Cada_tarj {
+    /* Para hacer que este cuadro de información suba a la imágen */
+    position: relative;
+    overflow: hidden;
+}
+
+.img_tarj {
+    width: 328px;
+    max-width: 250px;
+    height: auto;
+    /* Mantiene la proporción de la imagen */
+    border-radius: 24px;
+}
+
+.dato_tarj {
+    width: 200px;
+    background-color: var(--color2);
+    padding: 24px 32px;
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+    border-radius: 16px;
+    position: absolute;
+    bottom: -144px;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+}
+
+.titulo_tarj {
+    display: flex;
+    justify-content: center;
+    color: var(--colorC);
+    font-size: 18px;
+    font-family: 'Roboto Mono', sans-serif;
+    margin-bottom: 6px;
+}
+
+/* Colores titulos */
+.H{
+    color: var(--color);
+}
+.C{
+    color: var(--color3);
+}
+.J{
+    color: var(--color4);
+}
+.B{
+    color: var(--color5);
+}
+
+.info_tarj {
+    color: var(--colorB);
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* Animación de las tarjetas */
+.Cada_tarj:hover .dato_tarj {
+    /* forwards ayudará a mantener los estilos una vez finalizado */
+    animation: show-data 1s forwards;
+    opacity: 1;
+    transition: opacity .3s;
+}
+
+.Cada_tarj:hover {
+    animation: remove-overflow 2s forwards;
+}
+
+.Cada_tarj:not(:hover) {
+    animation: show-overflow 2s forwards;
+}
+
+.Cada_tarj:not(:hover) .dato_tarj {
+    animation: remove-data 1s forwards;
+}
+
+/* Definimos la acción how-data y remove-overflow */
+@keyframes show-data {
+    50% {
+        transform: translateY(-160px);
+    }
+
+    100% {
+        transform: translateY(-112px);
+    }
+}
+
+@keyframes remove-overflow {
+    to {
+        overflow: initial;
+    }
+}
+
+@keyframes remove-data {
+    0% {
+        transform: translateY(-112px);
+    }
+
+    50% {
+        transform: translateY(-160px);
+    }
+
+    100% {
+        transform: translateY(.30px);
+    }
+}
+
+@keyframes show-overflow {
+    0% {
+        overflow: initial;
+        pointer-events: none;
+    }
+
+    50% {
+        overflow: hidden;
+    }
+}
+
+/* ---------------------------------- Pie de págnia (Final) */
+.r7{
+    background-color: var(--color1);
+    display: flex;
+    text-align: center;
+}
+
+.ico1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    font-size: 160%;
+    color: var(--color2);
+}
+
+
+/* ---------------------------------- RESPONSIVE ZONE :D */
+/* Res parte de los repositorios */
 @media (max-width: 2560px) {
     .card1 {
         width: calc(33.33% - 40px); /* Tres tarjetas por fila calc(dimensión del espacio - tamaño de la caja) */
     }
 }
-
 @media (max-width: 426px) {
     .card1 {
         width: calc(100% - 40px); /* Tres tarjetas por fila calc(dimensión del espacio - tamaño de la caja) */
+    }
+}
+
+/* Parte de mis habilidades */
+@media (max-width: 1025px) {
+    .contenedor_tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_tarj {
+        width: 100%
+        
     }
 }
