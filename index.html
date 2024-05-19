@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <!-- bootstrap 5.3 -->
     <link rel="stylesheet" href="./assets/vendor/bootstrap/bootstrap.css">
     <!-- Conexión para los iconos ONLINE -->
@@ -42,7 +43,7 @@
     </header>
 
     <!-- Tendrá el contenido de la página -->
-    <main>
+    <main>  
         <div class="container-fluid cont2">
             <!-- Aquí irá mi nombre y perfil -->
             <div class="row r1">
@@ -63,7 +64,7 @@
                     <!-- Pequeña descripción de mí -->
                     <div class="card foto">
                         <div class="card-body">
-                            <span>¡Hola! Soy un pobre y triste estudiante que está puliendo sus habilidades como desarrollador front-end, Pero ¿sabes qué es eso, no? 'Desarrollador front-end'. A ver, te explico
+                            <span>¡Hola! Soy un pobre y triste estudiante que está puliendo sus habilidades como desarrollador front-end, pero ¿sabes qué es eso, no? 'Desarrollador front-end'. A ver, te explico...
                             </span>
                             <br>
                             <br>
@@ -101,7 +102,7 @@
                     </div>
                     <div class="card card1">
                         <figure>
-                            <a href="https://kevinparker02.github.io/WebGroundZero/index.html"><img class="imgRepos" src="./assets/img/Repos1.jpg"></a>
+                            <a href="https://kevinparker02.github.io/WebGroundZero/index.html"><img class="imgRepos" src="./assets/img/Repos2.jpg"></a>
                         </figure>
                         <div class="contenido">
                             <h3>Ayuda Peludo</h3>
@@ -116,7 +117,7 @@
                         </figure>
                         <div class="contenido">
                             <h3>InsPhoto</h3>
-                            <p>"El especial de la casa" Es una página web personal basada en una gaería de fotografías tomadas por mí</p>
+                            <p>"El especial de la casa" Es una página web personal basada en una galería de fotografías tomadas por mí</p>
                             <a class="Var1">HMTL</a>
                             <a class="Var2">CSS</a>
                             <a class="Var3">JS</a>
@@ -126,23 +127,66 @@
             </div> 
 
             <div class="row r4" id="Habilidad">
-                <!-- Aquí irán mis Habilidades -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo">Habilidades Tecnológicas</h1> 
+                <!-- Titulo -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 pt-4">
+                    <h1 class="Titulo2">Habilidades Tecnológicas</h1> 
                 </section>
+                <!-- Aquí irán las habilidades (En tarjetas) -->
+                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
+                    <div class="container container2">
+                        <div class="contenedor_tarjetas">
+                            <article class="Cada_tarj">
+                                <img src="./assets/img/LM.jpg" alt="image" class="img_tarj">
+                                <div class="dato_tarj">
+                                    <span class="titulo_tarj H">HTML</span>
+                                    <h2 class="info_tarj">
+                                        HyperText Markup Language es el lenguaje estándar para crear y estructurar páginas web. Utiliza etiquetas para definir elementos como texto, imágenes y enlaces, indicando al navegador cómo mostrar el contenido.</h2>
+                                </div>
+                            </article>
+           
+                            <article class="Cada_tarj">
+                                <img src="./assets/img/LS.png" alt="image" class="img_tarj">
+                                <div class="dato_tarj">
+                                    <span class="titulo_tarj C">CSS</span>
+                                    <h2 class="info_tarj">
+                                        Cascading Style Sheets es un lenguaje de diseño utilizado para definir la presentación y el aspecto visual de documentos HTML. </h2>
+                                </div>
+                            </article>
+           
+                            <article class="Cada_tarj">
+                                <img src="./assets/img/LP.jpg" alt="image" class="img_tarj">
+                                <div class="dato_tarj">
+                                    <span class="titulo_tarj J">Java Script</span>
+                                    <h2 class="info_tarj">
+                                        Es un lenguaje de programación que se utiliza principalmente para crear contenido web interactivo y dinámico. También te permite agregar funcionalidades como animaciones, validaciones y DOM (Document Object Model). </h2>
+                                </div>
+                            </article>
+           
+                            <article class="Cada_tarj">
+                                <img src="./assets/img/bootstrap5.jpeg" alt="image" class="img_tarj">
+                                <div class="dato_tarj">
+                                    <span class="titulo_tarj B">Bootstrap</span>
+                                    <h2 class="info_tarj">
+                                        Es un framework front-end de código abierto que facilita el desarrollo visual de los sitios web y aplicaciones web responsivas y móviles. </h2>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                 </section>
+                
             </div>
 
             <div class="row r5" id="Certificados">
                 <!-- Aquí irán mis "Certificados" -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo">Certificados</h1> 
+                <section class="col-xl-12 col-sm-12 col-xs-12">
+                    <h1 class="Titulo2">Certificados</h1> 
                 </section>
             </div> 
 
             <div class="row r6" id="Contacto">
                 <!-- Contactame -->
-                <section class="col-xl-12 col-sm-12 col-xs-12 py-3">
-                    <h1 class="Titulo Form_Tit">Contactame</h1> 
+                <section class="col-xl-12 col-sm-12 col-xs-12 pb-4">
+                    <h1 class="Titulo Titulo2">Contactame</h1> 
                     <div class="card Formulario">
                         <div class="card-body">
                             <form id="myForm">
@@ -175,7 +219,16 @@
 
     <!-- Tendrá el pié de página -->
     <footer>
-
+        <div class="container-fluid cont3">
+            <div class="row r7">
+                <section class="col-xl-12 col-sm-12 col-xs-12">
+                  <a class="link m-3" href="https://instagram.com/"><i class="fa-brands fa-instagram ico1 ico-anim"></i></a>
+                  <!-- Cada i tendrá como nombred de calse i1 para modificar su color -->
+                  <a class="link m-3" href="https://www.linkedin.com/in/kv-02a960292/"><i class="fa-brands ico1 fa-linkedin"></i></a>
+                  <a class="link m-3" href="https://github.com/KevinParker02"><i class="fa-brands fa-github ico1"></i></a>
+                </section>
+            </div>
+        </div>
     </footer>
 
 <!-- Bootstrap JS -->
