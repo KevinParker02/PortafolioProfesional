@@ -63,7 +63,7 @@ function validarFormulario(){
 
     //Validamos el Email
     const inputValue2 = Email.value.trim();
-    const allowedChars2 = /[@]/;
+    const allowedChars2 = /[a-zA-Z@ . 0-9\ _ ]/;
         //sanitizedValu2 (Variable) obtendrá el valor depurado, es decir, que una vez ingrese en el ciclo ELIMINARA cualquier caracter que no sea válido.
     let sanitizedValu2 = '';
     for (let i = 0; i < inputValue2.length; i++) {
@@ -75,14 +75,14 @@ function validarFormulario(){
         Email.value = sanitizedValu2;
 
         if (inputValue2 === "") {
-        correoERROR.textContent = "Debe ingresar un correo.";
-    } else if (inputValue2 !== sanitizedValu2) {
-        correoERROR.textContent = "Debe ingresar un correo válido.";
-    } else {
-        correoERROR.textContent = "";
-    };
+            correoERROR.textContent = "Debe ingresar un correo.";
+        } else if (inputValue2 !== sanitizedValu2 || !inputValue2.includes('@') || !inputValue2.includes('.')) {
+            correoERROR.textContent = "Debe ingresar un correo válido.";
+        } else {
+            correoERROR.textContent = "";
+        }
 
-    if(nombreERROR.textContent==="" && rutERROR.textContent==="" && genError.textContent==="" && correoERROR.textContent===""){
+    if(nombreERROR.textContent==="" && correoERROR.textContent===""){
         //Código para enviar un formulario.
         alert("El formulario se envió correctamente.");
         form.submit();
