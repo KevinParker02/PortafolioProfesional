@@ -33,19 +33,19 @@ obtenerDatosUsuario('KevinParker02');
 
 
 // --------------------------------------------------- Obtener datos del formulario.
-let nombre = document.getElementById("nombre");
+let name = document.getElementById("name");
 let nombreERROR = document.getElementById("nombreERROR");
 
-let Recado = document.getElementById("Recado");
+let message = document.getElementById("message");
 
-let Email = document.getElementById("Email");
+let email = document.getElementById("email");
 let correoERROR = document.getElementById("correoERROR");
 
 // Para el formulario (Agarra todo el contenido)
 let form = document.getElementById("myForm");
 
 // Prevenimos que se envíe el formulario con campos sin rellenar
-form.addEventListener("submit", function(){
+form.addEventListener("submit", function(event){
     event.preventDefault(); //Prevenir recarga automática del formulario.
     validarFormulario();
 });
@@ -57,12 +57,12 @@ function validarFormulario(){
     correoERROR.textContent="";
 
     //Validamos los inputs
-    if(nombre.value === null|| nombre.value.trim()===""){
+    if(name.value === null|| name.value.trim()===""){
         nombreERROR.textContent="Por favor ingrese su nombre."
     };
 
-    //Validamos el Email
-    const inputValue2 = Email.value.trim();
+    //Validamos el email
+    const inputValue2 = email.value.trim();
     const allowedChars2 = /[a-zA-Z@ . 0-9\ _ ]/;
         //sanitizedValu2 (Variable) obtendrá el valor depurado, es decir, que una vez ingrese en el ciclo ELIMINARA cualquier caracter que no sea válido.
     let sanitizedValu2 = '';
@@ -72,7 +72,7 @@ function validarFormulario(){
         }
     };
         //Finalmente actualizamos el registro obtenido en el imput y lo comparamos en los IF
-        Email.value = sanitizedValu2;
+        email.value = sanitizedValu2;
 
         if (inputValue2 === "") {
             correoERROR.textContent = "Debe ingresar un correo.";
