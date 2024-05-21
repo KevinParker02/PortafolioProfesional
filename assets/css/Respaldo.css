@@ -1,0 +1,106 @@
+/* ---------------------------------- RESPONSIVE ZONE :D */
+/* Res parte de los repositorios */
+@media (max-width: 2560px) {
+    .card1 {
+        width: calc(33.33%);
+    }
+    .nav-link{
+        font-size: 18px;
+    }
+    .Titulo{
+        font-size: 95px;
+    }
+    .text-secundary{
+        font-size: 30px;
+    }
+    .Text1{
+        font-size: 32px;
+    }
+    /* Parte de los titulos */
+    .Titulo2{
+        font-size: 85px;
+    }
+    .Info2{
+        font-size: 3%;
+    }
+    .Titulo3{
+        font-size: 62px;
+    }
+    .text-secundary2{
+        font-size: 29px;
+    }
+    /* Habilidades */
+    .titulo_tarj{
+        font-size: 20px;
+    }
+    .info_tarj{
+        font-size: 11px;
+    }
+    /* Contacto */
+    .form-label{
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1440px) {
+    .nav-link{
+        font-size: 18px;
+    }
+    .Titulo{
+        font-size: 55px;
+    }
+    .text-secundary{
+        font-size: 16px;
+    }
+    .Text1{
+        font-size: 18px;
+    }
+    /* Parte de los titulos */
+    .Titulo2{
+        font-size: 55px;
+    }
+    .Info2{
+        font-size: 18px;
+    }
+    .Titulo3{
+        font-size: 32px;
+    }
+    .text-secundary2{
+        font-size: 15px;
+    }
+    /* Habilidades */
+    .titulo_tarj{
+        font-size: 20px;
+    }
+    .info_tarj{
+        font-size: 11px;
+    }
+    /* Contacto */
+    .form-label{
+        font-size: 25px;
+    }
+    .btn{
+        font-size: 25px;
+    }
+
+}
+@media (max-width: 426px) {
+    .card1 {
+        width: calc(100% - 40px); /* Tres tarjetas por fila calc(dimensión del espacio - tamaño de la caja) */
+    }
+}
+
+/* Parte de mis habilidades */
+@media (max-width: 1025px) {
+    .contenedor_tarjetas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img_tarj {
+        width: 100%
+        
+    }
+}

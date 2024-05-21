@@ -31,11 +31,12 @@ body{
 .nav-link{
     text-decoration: none;
     color: var(--colorB);
+    font-size: 200%;
 }
 
 .logo{
-    height: 60px;
-    width: 60px;
+    height: 180px;
+    width: 180px;
 }
 
 .barra1{
@@ -54,6 +55,16 @@ body{
     justify-content: center;
     color: var(--colorA);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 520%;
+}
+
+.Info{
+    display: flex;
+    justify-content: center;
+    color: var(--colorA);
+    font-family: 'Roboto Mono', sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 160%;
 }
 
 /* ---------------------------------- Sección donde irá mi información */
@@ -64,25 +75,23 @@ body{
 }
 
 .FotoGit{
-    height: 85%;
-    width: 85%;
-    border-radius: 2%;
+    height: 76%;
+    width: 76%;
+    border-radius: 4%;
     box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.3);
 }
 
-.Info{
-    display: flex;
-    justify-content: center;
-    color: var(--colorA);
-    font-family: 'Roboto Mono', sans-serif;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+.Text1{
+    font-size: 226%;
 }
+
 
 .r2{
     background-color: var(--color2);
     font-family: 'Roboto Mono', sans-serif;
     font-size: 14.5px;
 }
+
 
 /* ---------------------------------- Parte de mis repositorios */
 .cont2{
@@ -94,7 +103,9 @@ body{
     justify-content: center;
     color: var(--colorB);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    padding-bottom: 30px;
+    padding-bottom: 10px;
+    font-size: 520%;
+    padding-bottom: 20px;
 }
 
 .Info2{
@@ -102,33 +113,113 @@ body{
     justify-content: center;
     color: var(--colorB);
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 200%;
+    padding-bottom: 1%;
 }
 
-.container1{
-    width: 100%;
-    max-width: 1110px;
+.container1 {
+    width: 80%;
+    max-width: 80%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea si es necesario */
+    justify-content: center; 
+    gap: 50px; /* Espacio entre las tarjetas */
 }
-.card1{
-    margin: 20px;
+
+    /* Estilo para las tarjetas */
+.card1 {
+    flex: 1 1 calc(33.333% - 50px);
+    max-width: calc(33.333% - 50px); 
+    margin: 0;
     border-radius: 6px;
     overflow: hidden;
     background: var(--color2);
-    box-shadow: 0px 1px 10px rgba(0,0,0.2);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
     cursor: default;
     transition: all 400ms ease;
 }
 
-p{
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 13px;
-    justify-content: center;
+.Titulo3{
+    font-size: 400%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.text-secundary2{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 190%;
+    padding-bottom: 3%;
 }
 
-       /* Efectos de las cajas */
+    /* Aquí van los "iconos" de los lenguajes */
+.card1 .Var1 {
+    /* HTML */
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 170%;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--colorB);
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background: var(--color);
+    padding-left: 3px;
+    padding-right: 3px;
+
+}
+
+.card1 .Var2 {
+    /* CSS */
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 170%;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--colorA);
+    border: 1px solid var(--color3);
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background: var(--color3);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.card1 .Var3 {
+    /* JS */
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 170%;
+    text-decoration: none;
+    display: inline-block;
+    color: var(--colorB);
+    border: 1px solid var(--color4);
+    border-radius: 4px;
+    transition: all 400ms ease;
+    background: var(--color4);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+    /* Efectos de las cajas */
+.card1 .Var1:hover {
+    /* HTML */
+    color: var(--colorB);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
+.card1 .Var2:hover {
+    /* CSS */
+    color: var(--colorA);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
+.card1 .Var3:hover {
+    /* JS */
+    color: var(--colorB);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0.4);
+    transform: translateY(-2%);
+}
+
 .card1:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0.4);
     transform: translateY(-3%);
@@ -149,91 +240,34 @@ p{
     color: var(--colorC);
 }
 
-       /* Aquí van los "iconos" de los lenguajes */
-.card1 .Var1{
-    /* HTML */
-    text-decoration: none;
-    display: inline-block;
-    color: var(--colorB);
-    border: 1px solid var(--color);
-    border-radius: 4px;
-    transition: all 400ms ease;
-    background: var(--color);
-    padding-left: 3px;
-    padding-right: 3px;
-
-}
-.card1 .Var2{
-    /* CSS */
-    text-decoration: none;
-    display: inline-block;
-    color: var(--colorA);
-    border: 1px solid var(--color3);
-    border-radius: 4px;
-    transition: all 400ms ease;
-    background: var(--color3);
-    padding-left: 3px;
-    padding-right: 3px;
-}
-.card1 .Var3{
-    /* JS */
-    text-decoration: none;
-    display: inline-block;
-    color: var(--colorB);
-    border: 1px solid var(--color4);
-    border-radius: 4px;
-    transition: all 400ms ease;
-    background: var(--color4);
-    padding-left: 3px;
-    padding-right: 3px;
-}
-.card1 .Var1:hover{
-    /* HTML */
-    color: var(--colorB);
-    box-shadow: 2px 2px 8px rgba(0,0,0.4);
-    transform: translateY(-2%);
-}
-.card1 .Var2:hover{
-    /* CSS */
-    color: var(--colorA);
-    box-shadow: 2px 2px 8px rgba(0,0,0.4);
-    transform: translateY(-2%);
-}
-.card1 .Var3:hover{
-    /* JS */
-    color: var(--colorB);
-    box-shadow: 2px 2px 8px rgba(0,0,0.4);
-    transform: translateY(-2%);
-}
-
 /* ---------------------------------- Parte de las habilidades */
 .container2 {
     place-items: center;
-    padding-bottom: 45px;
-}
-
-.contenedor_tarjetas {
+    padding-bottom: 50px;
     display: flex;
-    justify-content: space-between;
-    row-gap: 56px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 70px;
 }
 
 .Cada_tarj {
     /* Para hacer que este cuadro de información suba a la imágen */
     position: relative;
     overflow: hidden;
+    border-radius: 24px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .img_tarj {
-    width: 328px;
-    max-width: 250px;
+    width: 560px;
+    max-width: 560px;
     height: auto;
     /* Mantiene la proporción de la imagen */
     border-radius: 24px;
 }
 
 .dato_tarj {
-    width: 200px;
+    width: 450px;
     background-color: var(--color2);
     padding: 24px 32px;
     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
@@ -251,30 +285,32 @@ p{
     display: flex;
     justify-content: center;
     color: var(--colorC);
-    font-size: 18px;
-    font-family: 'Roboto Mono', sans-serif;
-    margin-bottom: 6px;
-}
-
-/* Colores titulos */
-.H{
-    color: var(--color);
-}
-.C{
-    color: var(--color3);
-}
-.J{
-    color: var(--color4);
-}
-.B{
-    color: var(--color5);
+    font-size: 300%;
+    margin-bottom: 10px;
 }
 
 .info_tarj {
     color: var(--colorB);
-    font-size: 10px;
+    font-size: 195%;
+    justify-content: center;
     text-align: center;
-    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* Colores titulos */
+.H {
+    color: var(--color);
+}
+
+.C {
+    color: var(--color3);
+}
+
+.J {
+    color: var(--color4);
+}
+
+.B {
+    color: var(--color5);
 }
 
 /* Animación de las tarjetas */
@@ -339,6 +375,39 @@ p{
     }
 }
 
+/* ---------------------------------- Certificados */
+.card2 {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px); 
+    margin: 0;
+    border-radius: 6px;
+    overflow: hidden;
+    background: var(--color2);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card2:hover{
+    box-shadow: 5px 5px 20px rgba(0,0,0.4);
+    transform: translateY(-3%);
+}
+
+.card2 .imgRepos{
+    width: 100%;
+    height: 108%;
+}
+
+/* ---------------------------------- Formulario */
+.Formulario{
+    box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
+}
+.ContacT{
+    font-size: 300%;
+}
+.ContactR{
+    font-size: 200%;
+}
+
 /* ---------------------------------- Pie de págnia (Final) */
 .r7{
     background-color: var(--color1);
@@ -350,33 +419,412 @@ p{
     padding-top: 2%;
     padding-bottom: 2%;
     justify-content: space-between;
-    font-size: 160%;
+    font-size: 360%;
     color: var(--color2);
 }
 
+/* ---------------------------------- Responsive */
 
-/* ---------------------------------- RESPONSIVE ZONE :D */
-/* Res parte de los repositorios */
-@media (max-width: 2560px) {
-    .card1 {
-        width: calc(33.33% - 40px); /* Tres tarjetas por fila calc(dimensión del espacio - tamaño de la caja) */
+@media (max-width: 1440px) {
+    .logo{
+        height: 70px;
+        width: 70px;
+    }
+    .nav-link{
+        font-size: 16px;
+    }
+    .Titulo{
+        font-size: 50px;
+    }
+    .text-secundary{
+        font-size: 14px;
+    }
+    /* Lo que viene después del titulo principal */
+    .FotoGit{
+        height: 85%;
+        width: 85%;
+    }
+    .Text1{
+        font-size: 15px;
+    }
+    .card1 .Var1{
+        font-size: 17px;
+    }
+    .card1 .Var2{
+        font-size: 17px;
+    }
+    .card1 .Var3{
+        font-size: 17px;
+    }
+    /* Parte de los titulos */
+    .Titulo2{
+        font-size: 55px;
+    }
+    .Info2{
+        font-size: 18px;
+    }
+    .Titulo3{
+        font-size: 32px;
+    }
+    .text-secundary2{
+        font-size: 15px;
+    }
+    /* Habilidades */
+    .img_tarj {
+        width: 300px;
+        max-width: 300px;
+        border-radius: 24px;
+    }
+    .titulo_tarj{
+        font-size: 25px;
+    }
+    .dato_tarj{
+        width: 270px;
+    }
+    .info_tarj{
+        font-size: 15px;
+    }
+
+    /* Certificados */
+    .card2 {
+        max-width: 100%;
+    }
+
+    /* Contacto */
+    .form-label{
+        font-size: 19px;
+    }
+    .ContactR{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 19px;
+    }
+    .ico1{
+        font-size: 200%;
     }
 }
-@media (max-width: 426px) {
+
+@media (max-width: 1024px) {
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .Titulo {
+        font-size: 45px;
+    }
+
+    .text-secundary {
+        font-size: 12px;
+    }
+
+    /* Lo que viene después del titulo principal */
+    .FotoGit {
+        height: 95%;
+        width: 95%;
+    }
+
+    .Text1 {
+        font-size: 9px;
+    }
+
     .card1 {
-        width: calc(100% - 40px); /* Tres tarjetas por fila calc(dimensión del espacio - tamaño de la caja) */
+        max-width: 100%;
+    }
+
+    .card1 .Var1 {
+        font-size: 13px;
+    }
+
+    .card1 .Var2 {
+        font-size: 13px;
+    }
+
+    .card1 .Var3 {
+        font-size: 13px;
+    }
+
+    /* Parte de los titulos */
+    .Titulo2 {
+        font-size: 48px;
+    }
+
+    .Info2 {
+        font-size: 16px;
+    }
+
+    .Titulo3 {
+        font-size: 28px;
+    }
+
+    .text-secundary2 {
+        font-size: 13px;
+    }
+
+    /* Habilidades */
+    .img_tarj {
+        width: 270px;
+        max-width: 270px;
+        border-radius: 24px;
+    }
+
+    .titulo_tarj {
+        font-size: 21px;
+    }
+
+    .dato_tarj {
+        width: 240px;
+    }
+
+    .info_tarj {
+        font-size: 13px;
+    }
+
+    /* Certificados */
+    .card2 {
+        max-width: 80%;
+    }
+
+    /* Contacto */
+    .form-label {
+        font-size: 16px;
+    }
+
+    .ContactR {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .ico1 {
+        font-size: 170%;
     }
 }
 
-/* Parte de mis habilidades */
-@media (max-width: 1025px) {
-    .contenedor_tarjetas {
+@media (max-width: 768px) {
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .Titulo {
+        font-size: 42px;
+    }
+
+    .text-secundary {
+        font-size: 10px;
+    }
+
+    /* Lo que viene después del titulo principal */
+    .FotoGit {
+        height: 90%;
+        width: 90%;
+    }
+
+    .Text1 {
+        font-size: 13px;
+    }
+    .DescGit{
+        margin: -20px;
+        padding-bottom: 20px;
+    }
+    .container1 {
         flex-direction: column;
         align-items: center;
     }
+    
+    .card1 {
+        max-width: 70%;
+    }
+    .card1 .Var1 {
+        font-size: 13px;
+    }
 
+    .card1 .Var2 {
+        font-size: 13px;
+    }
+
+    .card1 .Var3 {
+        font-size: 13px;
+    }
+
+    /* Parte de los titulos */
+    .Titulo2 {
+        font-size: 43px;
+    }
+
+    .Info2 {
+        font-size: 15px;
+    }
+
+    .Titulo3 {
+        font-size: 26px;
+    }
+
+    .text-secundary2 {
+        font-size: 13px;
+    }
+
+    /* Habilidades */
     .img_tarj {
-        width: 100%
-        
+        width: 270px;
+        max-width: 270px;
+        border-radius: 24px;
+    }
+
+    .titulo_tarj {
+        font-size: 21px;
+    }
+
+    .dato_tarj {
+        width: 240px;
+    }
+
+    .info_tarj {
+        font-size: 13px;
+    }
+    /* Certificados */
+    .card2 {
+        max-width: 70%;
+    }
+    /* Contacto */
+    .form-label {
+        font-size: 16px;
+    }
+
+    .ContactR {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .ico1 {
+        font-size: 170%;
     }
 }
+
+@media (max-width: 550px) {
+    .logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .r1{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .Titulo {
+        font-size: 36px;
+    }
+
+    .text-secundary {
+        font-size: 9px;
+    }
+
+    /* Lo que viene después del titulo principal */
+    .FotoGit {
+        height: 60%;
+        width: 60%;
+    }
+
+    .Text1 {
+        font-size: 11px;
+    }
+    .DescGit{
+        margin: -20px;
+    }
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card1 {
+        max-width: 90%;
+    }
+    .card1 .Var1 {
+        font-size: 10px;
+    }
+
+    .card1 .Var2 {
+        font-size: 10px;
+    }
+
+    .card1 .Var3 {
+        font-size: 10px;
+    }
+
+    /* Parte de los titulos */
+    .Titulo2 {
+        font-size: 32px;
+    }
+
+    .Info2 {
+        font-size: 13px;
+    }
+
+    .Titulo3 {
+        font-size: 22px;
+    }
+
+    .text-secundary2 {
+        font-size: 12px;
+    }
+
+    /* Habilidades */
+    .img_tarj {
+        width: 250px;
+        max-width: 250px;
+        border-radius: 24px;
+    }
+
+    .titulo_tarj {
+        font-size: 18px;
+    }
+
+    .dato_tarj {
+        width: 210px;
+    }
+
+    .info_tarj {
+        font-size: 10px;
+    }
+    /* Certificados */
+    .card2 {
+        max-width: 100%;
+    }
+    /* Contacto */
+    .form-label {
+        font-size: 14px;
+    }
+
+    .ContactR {
+        font-size: 11px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    .ico1 {
+        font-size: 130%;
+    }
+}
+
